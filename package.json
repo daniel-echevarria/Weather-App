@@ -28,5 +28,8 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "input-with-label": "file:../input-with-label"
+  }
 }
