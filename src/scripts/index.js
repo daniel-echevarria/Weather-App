@@ -1,3 +1,5 @@
 import getInputLocation from "./getInputLocation";
+import "../styles/index.css";
 
-document.body.append(getInputLocation());
+const header = document.querySelector("header");
+header.append(getInputLocation());

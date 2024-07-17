@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+header,
+h2,
+img,
+.temp {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-location-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-location-section button,
+.input-location-section input {
+  height: 30px;
+}
+
+label {
+  display: none;
+}

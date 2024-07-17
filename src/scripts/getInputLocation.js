@@ -5,6 +5,7 @@ import displayData from "./displayData";
 
 export default function getInputLocation() {
   const container = document.createElement("div");
+  container.classList.add("input-location-section");
   const inputField = createInputField("location");
   const button = createFetchDataButton(inputField);
   container.append(inputField, button);
@@ -13,18 +14,12 @@ export default function getInputLocation() {
 
 function createFetchDataButton(inputField) {
   const button = document.createElement("button");
-  button.textContent = "Get Data From Location";
+  button.textContent = "Show Weather";
   button.addEventListener("click", () => {
     const location = inputField.querySelector("input").value;
     const weatherData = getWeatherDataFromLocation(location);
     const processedData = processWeatherData(weatherData);
-    displayData(processedData);
+    displayData(processedData, location);
   });
   return button;
 }
-
-// Create an Input with a button,
-// The button when clicked, checks the value inside the input
-// It passes this value to the getData from location
-// the result is passed to the processing data
-// the result is displayed
