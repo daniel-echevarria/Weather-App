@@ -8,6 +8,8 @@ export default async function displayData(data, location) {
   const conditionText = coolData.conditions;
   const temperature = coolData.temp;
 
+  console.log(conditionIcon);
+
   const imageEl = document.querySelector("img");
   imageEl.src = await fetchGif(conditionIcon);
 
