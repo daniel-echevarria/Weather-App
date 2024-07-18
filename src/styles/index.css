@@ -12,6 +12,15 @@ img,
   align-items: center;
 }
 
+.gif-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 70%;
+}
+
 .input-location-section {
   display: flex;
   justify-content: center;
